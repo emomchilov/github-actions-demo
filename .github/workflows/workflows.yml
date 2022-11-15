@@ -27,7 +27,7 @@ jobs:
           node-version: 18.7.0
       - name: Create build for dev
         run: |
-          build
+          npm run build
         shell: bash
       - name: Publish to Cloudflare Pages Project ${{ env.CLOUDFLARE_PAGES_PROJECT }}
         uses: cloudflare/pages-action@1
