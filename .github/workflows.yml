@@ -2,6 +2,8 @@ name: Build and Deploy to Cloudflare
 
 on:
   push:
+    branches:
+      - main
 
 env:
   # Since there is no ternary expression, the following conditionally sets
