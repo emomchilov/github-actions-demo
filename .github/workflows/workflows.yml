@@ -25,6 +25,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.7.0
+      - name: Install Dependencies
+        run: |
+          npm install
       - name: Create build for dev
         run: |
           npm run build:dev
